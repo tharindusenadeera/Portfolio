@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
+import Main from './components/main';
+
 
 class App extends Component {
     render() {
@@ -23,9 +25,10 @@ class App extends Component {
                     </Navigation>
                 </Drawer>
                 <Content>
-                    <div className='page-content'>
-                        <p>Example for the Portfolio Website</p>
-                    </div>
+                    <div className='page-content' />
+                    <Main />
+
+
                 </Content><br />
 
 
