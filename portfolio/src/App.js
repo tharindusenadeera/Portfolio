@@ -7,9 +7,9 @@ import { Link } from 'react-router-dom';
 
 class App extends Component {
     render() {
-        return (<div style={{ height: '300px', position: 'relative' }}>
-            <Layout style={{ background: 'url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover' }}>
-                <Link to="/"><Header transparent title="Portfolio" style={{ color: 'white' }} >
+        return (<div style={{ height: '700px', position: 'relative' }}>
+            <Layout>
+                <Link to="/"><Header className="header-color" transparent title="Portfolio" style={{ color: 'white' }} >
                     <Navigation>
                         <Link to="/aboutme">About Me</Link>
                         <Link to="/contact">Contact</Link>
