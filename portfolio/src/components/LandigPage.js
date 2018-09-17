@@ -24,11 +24,11 @@ class LandingPage extends Component {
                                     <i className="fa fa-github-square" aria-hidden="true" />
                                 </a>
 
-                                <a href="http://www.google.com" rel="nooperner noreferrer" target="_balnk">
+                                <a href="https://www.youtube.com/" rel="nooperner noreferrer" target="_balnk">
                                     <i className="fa fa-youtube-square" aria-hidden="true" />
                                 </a>
 
-                                <a href="http://www.google.com" rel="nooperner noreferrer" target="_balnk">
+                                <a href="https://www.facebook.com/tharindu.senadeera1" rel="nooperner noreferrer" target="_balnk">
                                     <i className="fa fa-facebook-square" aria-hidden="true" />
                                 </a>
                             </div>
