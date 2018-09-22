@@ -11,16 +11,19 @@ class Projects extends Component {
     toggleCategories() {
         if (this.state.activeTab === 0) {
             return (
-                <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                    <CardTitle style={{ color: 'black', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png) center/cover' }}>React Project #1</CardTitle>
-                    <CardText>My react projects</CardText>
-                    <CardActions border>
-                        <Button>GITHUB</Button>
-                    </CardActions>
-                    <CardMenu style={{ color: '#fff' }}>
-                        <IconButton name="share" />
-                    </CardMenu>
-                </Card>
+                <div className="project-grids">
+                    <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                        <CardTitle style={{ color: 'black', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png) center/cover' }}>React Project #1</CardTitle>
+                        <CardText>My react projects</CardText>
+                        <CardActions border>
+                            <Button>GITHUB</Button>
+                        </CardActions>
+                        <CardMenu style={{ color: '#fff' }}>
+                            <IconButton name="share" />
+                        </CardMenu>
+                    </Card>
+                </div>
+
             )
         }
         else if (this.state.activeTab === 1) {
@@ -72,7 +75,7 @@ class Projects extends Component {
                 </Tabs>
 
                 <section className="project-grids">
-                    <Grid className="project-grids">
+                    <Grid>
                         <Cell col={12}><div className="content"> {this.toggleCategories()}</div></Cell>
                     </Grid>
                 </section>
